@@ -49,7 +49,7 @@ export default function page() {
         <HighestRated17 />
        <CtaBanner19 />
         <InspiringService11 />
-    <UpperFooter/>
+    {/* <UpperFooter/> */}
       </div>
 
     </>

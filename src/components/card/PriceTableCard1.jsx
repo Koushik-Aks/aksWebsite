@@ -13,7 +13,7 @@ export default function PriceTableCard1({ data }) {
         style={{
           border: "1px solid #ccc", // Visible border with a light gray color
           boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)", // Shadow for better visibility
-          height: "100%",  // Ensures equal height for all cards
+          height: "100%", // Ensures equal height for all cards
         }}
       >
         <a
@@ -22,7 +22,12 @@ export default function PriceTableCard1({ data }) {
           {data?.heading} {/* Custom heading */}
         </a>
         <div className="heading mb10">
-          <h4 className="package_title mt-2">{data?.plan}</h4> {/* Display custom plan name */}
+          <h4
+            className="package_title mt-2"
+            style={{ color: "black" }} // Set the heading color to black
+          >
+            {data?.plan} {/* Display custom plan name */}
+          </h4>
         </div>
         <div className="details">
           <p className="text mb30">

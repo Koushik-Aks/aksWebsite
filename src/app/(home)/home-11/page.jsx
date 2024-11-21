@@ -11,8 +11,13 @@ import Talent11 from "@/components/section/Talent11";
 import Testimonials11 from "@/components/section/Testimonials11";
 import React from "react";
 
+import TrendingService2 from "@/components/section/TrendingService2";
+import BrowserCategory17 from "@/components/section/BrowserCategory17";
+import UpperFooter from "@/components/footer/UpperFooter";
+import PriceTable1 from "@/components/section/PriceTable1";
+
 export const metadata = {
-  title: "Freeio - Freelance Marketplace React/Next Js Template | Home 11",
+  title: "AKS IT SERVICES",
 };
 
 export default function page() {
@@ -21,14 +26,20 @@ export default function page() {
     
       <Header12 />
       <Hero11 />
+      {/* <Empanelleds/> */}
+      <PriceTable1/>
       <OurFunFact11 />
-      <PopulerService11 />
-      <BrowserCategory11 />
+      <OurPartner1 />
+      <TrendingService2 />
+      {/* <PopulerService11 /> */}
+      <BrowserCategory17 />
+      {/* <BrowserCategory11 /> */}
       <CtaBanner11 />
       <Testimonials11 />
-      <OurPartner1 />
+      
       <Talent11 />
       <InspiringService11 />
+      <UpperFooter/>
     </>
   );
 }

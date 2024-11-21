@@ -1,5 +1,5 @@
 "use client";
-import { about, category, support } from "@/data/footer";
+import { Company ,category, support } from "@/data/footer";
 import Link from "next/link";
 import Image from "next/image";
 import FooterSocial5 from "./FooterSocial5";
@@ -29,9 +29,9 @@ export default function Footer14() {
                 <div className="row justify-content-between">
                   <div className="col-auto">
                     <div className="link-style1 mb-3">
-                      <h6 className="text-white mb25">About</h6>
+                      <h6 className="text-white mb25">Company</h6>
                       <div className="link-list">
-                        {about.map((item,i) => (
+                        {Company.map((item,i) => (
                           <Link key={ i } href={item.path}>
                             {item.name}
                           </Link>

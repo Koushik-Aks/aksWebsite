@@ -52,7 +52,7 @@ a {
 
 .prev-btn:hover,
 .next-btn:hover {
-  background-color: #5bbb7b;
+  background-color: #808080; /* Change to gray */
   color: #ffffff;
 }
 /* slider arrow end*/
@@ -110,14 +110,14 @@ a {
 }
 
 .swiper__pagination .swiper-pagination-bullet-active {
-  background: #222222 !important;
+  background: #808080 !important; /* Change to gray */
   border-radius: 50%;
   height: 8px !important;
   width: 8px !important;
 }
 
 .swiper__pagination-2 .swiper-pagination-bullet-active {
-  background: #fff !important;
+  background: #808080 !important; /* Change to gray */
   height: 8px !important;
   width: 8px !important;
 }
@@ -137,7 +137,7 @@ a {
 }
 
 .price__range__box .example-track-1 {
-  background-color: #5bbb7b;
+  background-color: #808080; /* Change to gray */
   height: 4px;
 }
 
@@ -147,7 +147,7 @@ a {
 
 .price__range__box .example-thumb {
   background-color: #ffffff;
-  border: 2px solid #5bbb7b !important;
+  border: 2px solid #808080 !important; /* Change to gray */
   border-radius: 50%;
   height: 12px;
   width: 12px;
@@ -201,7 +201,7 @@ a {
   width: 36px !important;
   height: 36px !important;
   line-height: 36px !important;
-  background-color: #021f4a;
+  background-color: #808080; /* Change to gray */
   border: 7px solid rgba(255, 255, 255, 0.4);
   box-shadow: 0 7px 30px rgba(33, 33, 33, 0.3);
   box-sizing: content-box;
@@ -222,7 +222,7 @@ a {
   position: absolute !important;
   top: 1rem !important;
   left: 1rem !important;
-  background-color: red !important;
+  background-color: #808080 !important; /* Change to gray */
   height: 30px !important;
   width: 30px !important;
   border-radius: 50%;
@@ -256,12 +256,12 @@ a {
 }
 .ui-active,
 .ui-navigation .ui-active {
-  color: #5bbb7b !important;
+  color: #808080 !important; /* Change to gray */
 }
 
 .ui-navigation .ui-child-active {
   background-color: #f0efec !important;
-  border-left: 2px solid #5bbb7b !important;
+  border-left: 2px solid #808080 !important; /* Change to gray */
 }
 
 .employee-single-slider .next-btn {
@@ -283,7 +283,7 @@ a {
 }
 
 .ui-mobile-active > .ps-menu-button {
-  color: #5bbb7b !important;
+  color: #808080 !important; /* Change to gray */
 }
 
 .css-jn69v9,
@@ -294,7 +294,7 @@ a {
 
 /* delete btn */
 .ui-delete-btn {
-  background-color: #c72c2c;
+  background-color: #808080; /* Change to gray */
   height: 30px;
   width: 30px;
   top: -8px;
@@ -306,58 +306,23 @@ a {
 }
 
 .ui-delete-btn:hover {
-  background-color: #af2424;
+  background-color: #707070; /* Darker gray */
 }
 
 .ui-fav-active {
-  background-color: #5bbb7b !important;
+  background-color: #808080 !important; /* Change to gray */
   color: #fff !important;
 }
 
 /* hero search list active */
 .ui-list-active {
-  background-color: #5bbb7b;
+  background-color: #808080; /* Change to gray */
 }
 
 .ui-list-active .item_title {
-  color: #fff;
+  color: #fff !important;
 }
 
-/* socal media incon popup */
-
-.ui-share-toggle:hover {
-  color: unset !important;
-}
-
-.ui-social-media {
-  position: absolute;
-  background-color: #fff;
-  top: -3.5rem;
-  left: 50%;
-  transform: translateX(-50%);
-  border: 1px solid #ddd;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  padding: 8px 20px;
-  border-radius: 8px;
-}
-
-.ui-social-media::after {
-  content: "";
-  position: absolute;
-  bottom: -20px;
-  left: 50%;
-  transform: translateX(-50%);
-  border-right: 10px solid transparent;
-  border-left: 10px solid transparent;
-  border-top: 10px solid #ddd;
-  border-bottom: 10px solid transparent;
-}
-.ui-social-media a i {
-  transition: all 0.4s;
-  color: #222222;
-}
-.ui-social-media a:hover i {
-  color: #5bbb7b !important;
+.ui-price-box-right {
+  background-color: #808080; /* Change to gray */
 }

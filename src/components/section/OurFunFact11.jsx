@@ -16,13 +16,13 @@ export default function OurFunFact11() {
                   <div className="details">
                     <ul className="ps-0 mb-1 d-flex justify-content-center">
                       <li>
-                        <div className="timer text-white">834</div>
+                        <div className="timer text-white">15</div>
                       </li>
                       <li>
-                        <span className="text-white">M</span>
+                        <span className="text-white">+</span>
                       </li>
                     </ul>
-                    <p className="text text-white mb-0">Total Freelancer</p>
+                    <p className="text text-white mb-0">years of empanelment with CERT-IN</p>
                   </div>
                 </div>
               </div>
@@ -32,13 +32,13 @@ export default function OurFunFact11() {
                   <div className="details">
                     <ul className="ps-0 mb-1 d-flex justify-content-center">
                       <li>
-                        <div className="timer text-white">732</div>
+                        <div className="timer text-white">12000</div>
                       </li>
                       <li>
-                        <span className="text-white">M</span>
+                        <span className="text-white">+</span>
                       </li>
                     </ul>
-                    <p className="text text-white mb-0">Positive Review</p>
+                    <p className="text text-white mb-0">Number of application Audited</p>
                   </div>
                 </div>
               </div>
@@ -48,13 +48,15 @@ export default function OurFunFact11() {
                   <div className="details">
                     <ul className="ps-0 mb-1 d-flex justify-content-center">
                       <li>
-                        <div className="timer text-white">90</div>
+                        <div className="timer text-white">2000</div>
                       </li>
                       <li>
-                        <span className="text-white">M</span>
+                        <span className="text-white">+</span>
                       </li>
                     </ul>
-                    <p className="text text-white mb-0">Order recieved</p>
+                    <p className="text text-white mb-0">Number of clients
+
+                    </p>
                   </div>
                 </div>
               </div>
@@ -64,13 +66,13 @@ export default function OurFunFact11() {
                   <div className="details">
                     <ul className="ps-0 mb-1 d-flex justify-content-center">
                       <li>
-                        <div className="timer text-white">236</div>
+                        <div className="timer text-white">150</div>
                       </li>
                       <li>
-                        <span className="text-white">M</span>
+                        <span className="text-white">+</span>
                       </li>
                     </ul>
-                    <p className="text text-white mb-0">Projects Completed</p>
+                    <p className="text text-white mb-0">Certified Professionals</p>
                   </div>
                 </div>
               </div>

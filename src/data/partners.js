@@ -1,8 +1,8 @@
 export const partners = [
-  "/images/partners/19.png",
-  "/images/partners/20.png",
-  "/images/partners/21.png",
-  "/images/partners/22.png",
+  "/images/partners/certin.png",
+  "/images/partners/stqc.png",
+  "/images/partners/cca.png",
+  "/images/partners/NHA.png",
 ];
 
 export const partnersTwo = [
