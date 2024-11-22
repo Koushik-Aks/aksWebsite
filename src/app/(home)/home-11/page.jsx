@@ -10,11 +10,14 @@ import PopulerService11 from "@/components/section/PopulerService11";
 import Talent11 from "@/components/section/Talent11";
 import Testimonials11 from "@/components/section/Testimonials11";
 import React from "react";
+import AwardsSlider from "@/components/section/Awards&Recognition";
+import Empanelleds from "@/components/section/Empanelleds";
 
 import TrendingService2 from "@/components/section/TrendingService2";
 import BrowserCategory17 from "@/components/section/BrowserCategory17";
 import UpperFooter from "@/components/footer/UpperFooter";
 import PriceTable1 from "@/components/section/PriceTable1";
+import { imageOptimizer } from "next/dist/server/image-optimizer";
 
 export const metadata = {
   title: "AKS IT SERVICES",
@@ -26,17 +29,20 @@ export default function page() {
     
       <Header12 />
       <Hero11 />
-      {/* <Empanelleds/> */}
-      <PriceTable1/>
-      <OurFunFact11 />
       <OurPartner1 />
+      <Empanelleds/>
+      <PriceTable1/>
+      {/* <OurFunFact11 /> */}
+      {/* <OurPartner1 /> */}
       <TrendingService2 />
       {/* <PopulerService11 /> */}
       <BrowserCategory17 />
+     <AwardsSlider/>
       {/* <BrowserCategory11 /> */}
       <CtaBanner11 />
-      <Testimonials11 />
       
+      <Testimonials11 />
+    
       <Talent11 />
       <InspiringService11 />
       <UpperFooter/>

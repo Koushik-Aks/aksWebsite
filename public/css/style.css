@@ -267,7 +267,7 @@ h2 {
   border-radius: 16px 16px 0 0;
 }
 .footer-style1.at-home11 {
-  background-color: #1D6362;
+  background-color: #222222;
 }
 .footer-style1.at-home15 {
   background-color: #168882;
@@ -6255,12 +6255,12 @@ textarea {
   position: relative;
 }
 .pricing_packages.active .btn-dark-border {
-  background-color: #222222;
-  border: 2px solid #222222;
+  background-color: #808080;
+  border: 2px solid #808080;
   color: #ffffff;
 }
 .pricing_packages.active .btn-dark-border:before {
-  background-color: #222222;
+  background-color: #808080;
 }
 .pricing_packages.active .btn-thm-border {
   background-color: 808080;
@@ -6323,7 +6323,7 @@ textarea {
 
 .pricing_packages.at-home2 .ud-btn {
   border-radius: 90px;
-    color: black;
+    
 }
 
 /*	Testimonials Styles  */
@@ -7157,7 +7157,7 @@ textarea {
 }
 
 .btn-thm {
-  background-color: 808080;
+  background-color: #808080;
   border: 2px solid 808080;
   color: #ffffff;
 }
@@ -7191,7 +7191,7 @@ textarea {
 .btn-light-gray:before,
 .btn-transparent:before,
 .btn-transparent2:before {
-  background-color: 808080;
+  background-color: #808080;
   content: "";
   height: 100%;
   left: -100%;
@@ -7225,19 +7225,19 @@ textarea {
 .btn-thm3:hover,
 .btn-thm4:hover,
 .btn-thm-border:hover,
-.btn-dark-border:hover,
+/* .btn-dark-border:hover, */
 .btn-white:hover,
 .btn-light-gray:hover,
 .btn-transparent:hover,
 .btn-transparent2:hover {
-  color: #ffffff;
+  color: #222222;
 }
 .ud-btn:hover:before,
 .btn-gray:hover:before,
 .btn-dark:hover:before,
 .btn-thm:hover:before,
 .btn-light-thm:hover:before,
-/* .btn-light-white:hover:before, */
+.btn-light-white:hover:before,
 .btn-thm2:hover:before,
 .btn-home3:hover:before,
 .btn-thm3:hover:before,
@@ -7278,7 +7278,7 @@ textarea {
 }
 
 .btn-dark-border {
-  background-color: #ffffff;
+  background-color: #222222;
   border: 2px solid #222222;
   color: #222222;
 }
@@ -7287,7 +7287,7 @@ textarea {
   border: 2px solid #222222;
 }
 .btn-dark-border:hover:before {
-  background-color: #222222;
+  background-color: #000000;
 }
 
 .btn-thm:hover {
@@ -7330,7 +7330,7 @@ textarea {
 }
 
 .btn-thm4 {
-  background-color:#808080;
+  background-color:#222222;
   color: #ffffff;
 }
 

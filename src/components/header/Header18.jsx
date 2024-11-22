@@ -19,7 +19,7 @@ export default function Header18() {
                       <Image
                         width={250}
                         height={50}
-                        src="/images/aks2.png"
+                        src="/images/aks.png"
                         alt="Header Logo"
                       />
                     </Link>
@@ -27,7 +27,7 @@ export default function Header18() {
                       <Image
                         width={253}
                         height={50}
-                        src="/images/aks2.png"
+                        src="/images/aks.png"
                         alt="Header Logo"
                       />
                     </Link>
@@ -91,14 +91,15 @@ export default function Header18() {
 }
 
 
+// 
 const headerStyles = {
   header: {
     position: "fixed", 
     top: 0,            
     left: 0,
     right: 0,
-    backgroundColor: "#223543", // Dark background for navbar #223543
-    color: "#007aff",           // White text for contrast
+    backgroundColor: "#ffffff", // Dark background for navbar #223543
+    color: "#222222",           // Darker text color for better visibility
     zIndex: 9999,
     width: "100%",          
     boxShadow: "0 4px 10px rgba(0, 0, 0, 0.1)",
@@ -108,4 +109,5 @@ const headerStyles = {
     overflow: "visible",    
   },
 };
+
 

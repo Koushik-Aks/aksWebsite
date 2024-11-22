@@ -5,18 +5,18 @@ export default function FooterSocial() {
     <>
       <div className="social-widget d-flex justify-content-between w-100">
         {/* Left side: Privacy Policy and Site Map (aligned to extreme left) */}
-        <div className="footer-links d-flex align-items-center" style={{ marginLeft: -820 }}>
-          <Link className="text-white fw500 fz17" href="/privacy-policy">
-            Privacy Policy
-          </Link>
-          <span className="text-white mx-2">|</span>
-          <Link className="text-white fw500 fz17" href="/site-map">
+        <div className="footer-links d-flex align-items-center" >
+          
+            {/* Privacy Policy */}
+        
+          {/* <span className="text-white mx-2">|</span> */}
+          {/* <Link className="text-white fw500 fz17" href="/site-map">
             Site Map
-          </Link>
+          </Link> */}
         </div>
 
         {/* Right side: Follow us and social icons */}
-        <div className="social-style1 d-flex align-items-center">
+        {/* <div className="social-style1 d-flex align-items-center">
           <Link className="text-white me-2 fw500 fz17" href="/">
             Follow us
           </Link>
@@ -32,7 +32,7 @@ export default function FooterSocial() {
           <a>
             <i className="fab fa-linkedin-in list-inline-item" />
           </a>
-        </div>
+        </div> */}
       </div>
     </>
   );

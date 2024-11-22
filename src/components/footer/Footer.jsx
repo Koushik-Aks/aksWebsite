@@ -2,7 +2,6 @@
 import Link from "next/link";
 import FooterHeader from "./FooterHeader";
 import { usePathname } from "next/navigation";
-import FooterSelect2 from "./FooterSelect2";
 import { about, category, Company, partners, support } from "@/data/footer";
 
 export default function Footer() {
@@ -135,38 +134,60 @@ export default function Footer() {
             </div>
           </div>
         </div>
+        {/* Footer bottom section */}
         <div className="container white-bdrt1 py-4">
-          <div className="row align-items-center">
-            <div className="col-md-6">
-              <div className="text-center text-lg-start">
-                <p
-                  className={`copyright-text mb-2 mb-md-0 ${
-                    path === "/home-11" ? "text-white" : "text-white-light"
-                  } ff-heading`}
-                >
-                  © Copyright AKS IT SERVICES
-                  <Link
-                    href="https://themeforest.net/user/ib-themes/portfolio"
-                    target="_blank"
-                    style={{ color: "inherit" }}
-                  ></Link>
-                  . All rights reserved.
-                </p>
-              </div>
+          <div className="d-flex justify-content-between align-items-center">
+            {/* Left: Copyright */}
+            <div>
+              <p
+                className={`copyright-text mb-0 ${
+                  path === "/home-11" ? "text-white" : "text-white-light"
+                } ff-heading`}
+              >
+                © Copyright AKS IT SERVICES
+                <Link
+                  href="https://themeforest.net/user/ib-themes/portfolio"
+                  target="_blank"
+                  style={{ color: "inherit" }}
+                ></Link>
+                . All rights reserved.
+              </p>
+            </div>
+            {/* Right: Social icons */}
+            <div className="social-style1 d-flex align-items-center">
+              <Link className="text-white me-2 fw500 fz17" href="/">
+                Follow us
+              </Link>
+              <a className="me-2">
+                <i className="fab fa-facebook-f list-inline-item" />
+              </a>
+              <a className="me-2">
+                <i className="fab fa-twitter list-inline-item" />
+              </a>
+              <a className="me-2">
+                <i className="fab fa-instagram list-inline-item" />
+              </a>
+              <a>
+                <i className="fab fa-linkedin-in list-inline-item" />
+              </a>
             </div>
           </div>
         </div>
       </section>
       <style jsx>{`
         .footer-logo {
-          max-width: 250px; /* Adjust the size to make the logo smaller */
-          height: 150px; /* Keep the aspect ratio */
+          max-width: 250px;
+          height: 150px;
         }
 
         .footer-logo-text {
-          font-size: 0.875rem; /* Adjust the font size if needed */
-          text-align: center; /* Center-align the text below the logo */
-          margin-top: 1rem; /* Add some spacing between the logo and text */
+          font-size: 0.875rem;
+          text-align: center;
+          margin-top: 1rem;
+        }
+
+        .copyright-text {
+          font-size: 0.875rem;
         }
       `}</style>
     </>

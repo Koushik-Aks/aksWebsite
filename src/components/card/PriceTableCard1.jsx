@@ -18,6 +18,14 @@ export default function PriceTableCard1({ data }) {
       >
         <a
           className={`ud-btn ${path === "/home-10" ? "btn-dark-border" : "btn-light-thm"}`}
+          style={{
+            backgroundColor: "#111111", // Set button background to black
+            color: "white", // Ensure text is visible on the black background
+            padding: "10px 20px", // Adjust padding for better spacing
+            borderRadius: "8px", // Optional: add rounded corners for a modern look
+            textDecoration: "none", // Remove underline from the link
+            display: "inline-block", // Ensure proper alignment and spacing
+          }}
         >
           {data?.heading} {/* Custom heading */}
         </a>

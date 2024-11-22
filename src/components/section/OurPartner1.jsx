@@ -1,6 +1,6 @@
 "use client";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper";
 import 'swiper/css';
@@ -28,7 +28,7 @@ const partnerSubset = [
   0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15
 ];
 
-const PartnerSlider = () => {
+const OurFunFact11 = () => {
   const subsetPartners = partners.filter((_, index) => partnerSubset.includes(index));
   const [showSlider, setShowSlider] = useState(false);
 
@@ -37,82 +37,58 @@ const PartnerSlider = () => {
   }, []);
 
   return (
-    <div className="partner-slider">
-      <h1 className="slider-heading">Our Clients</h1>
-      {showSlider && (
-        <Swiper
-          modules={[Autoplay]}
-          spaceBetween={1}
-          slidesPerView={6}
-          loop={true}
-          autoplay={{
-            delay: 2000,
-            disableOnInteraction: false,
-          }}
-          breakpoints={{
-            320: { slidesPerView: 2 },
-            480: { slidesPerView: 3 },
-            640: { slidesPerView: 4 },
-            768: { slidesPerView: 5 },
-            1024: { slidesPerView: 6 },
-          }}
-          className="swiper-container"
-          speed={1000}
-        >
-          {subsetPartners.map((partner, index) => (
-            <SwiperSlide key={index}>
-              <div className="partner_item">
-                <div className="logo_container">
-                  <Image
-                    height={60} 
-                    width={100}
-                    src={partner}
-                    alt={`Partner ${index}`}
-                    className="logo_image"
-                    quality={100}
-                    layout="intrinsic"
-                  />
-                </div>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      )}
-      <style jsx>{`
-  .partner-slider {
-    text-align: center;
-    margin-bottom: 0px;
-  }
-  .slider-heading {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 40px;
-    color: #333;
-  }
-  .partner_item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;  // Adjust height as needed to fit images better
-    padding: 8px;
-  }
-  .logo_container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    width: 100px;  // Fixed width for consistency
-    height: auto;  // Allow height to adjust automatically
-  }
-  .logo_image {
-    object-fit: contain;  // Ensures the image is scaled to fit without cropping
-    width: 100%;          // Makes the image width scale to container
-    height: 100%;         // Makes the image height scale to container
-  }
-`}</style>
-
-    </div>
+    <section className="home11-funfact bdrs12 mx-auto maxw1700" style={{ backgroundColor: '#808080' }}>
+      <div className="container" style={{ width: '100%', height: '80px', paddingTop: '0px', marginTop: '-70px' }}> {/* Adjust paddingTop here */}
+        <div className="row" style={{ height: '100%' }}> {/* Set row height to match container */}
+          <div className="col-xl-10 mx-auto" style={{ height: '100%' }}>
+            {/* Partner Slider Section */}
+            <div className="partner-slider mt-5" style={{ height: '100%' }}>
+              <h1 className="slider-heading text-center" style={{ marginBottom: '40px' }}>Our Clients</h1>
+              {showSlider && (
+                <Swiper
+                  modules={[Autoplay]}
+                  spaceBetween={20}  // Adjust space between slides
+                  slidesPerView={6}
+                  loop={true}
+                  autoplay={{
+                    delay: 2000,
+                    disableOnInteraction: false,
+                  }}
+                  breakpoints={{
+                    320: { slidesPerView: 2 },
+                    480: { slidesPerView: 3 },
+                    640: { slidesPerView: 4 },
+                    768: { slidesPerView: 5 },
+                    1024: { slidesPerView: 6 },
+                  }}
+                  className="swiper-container"
+                  speed={1000}
+                >
+                  {subsetPartners.map((partner, index) => (
+                    <SwiperSlide key={index}>
+                      <div className="partner_item">
+                        <div className="logo_container">
+                          <Image
+                            height={60}
+                            width={100}
+                            src={partner}
+                            alt={`Partner ${index}`}
+                            className="logo_image"
+                            quality={100}
+                            layout="intrinsic"
+                          />
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 };
 
-export default PartnerSlider; 
+export default OurFunFact11;
