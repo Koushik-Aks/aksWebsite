@@ -19,6 +19,8 @@ import UpperFooter from "@/components/footer/UpperFooter";
 import PriceTable1 from "@/components/section/PriceTable1";
 import { imageOptimizer } from "next/dist/server/image-optimizer";
 
+import Testimonial1 from "@/components/section/Testimonial1";
+
 export const metadata = {
   title: "AKS IT SERVICES",
 };
@@ -27,7 +29,7 @@ export default function page() {
   return (
     <>
     
-      <Header12 />
+
       <Hero11 />
       <OurPartner1 />
       <Empanelleds/>
@@ -39,13 +41,13 @@ export default function page() {
       <BrowserCategory17 />
      <AwardsSlider/>
       {/* <BrowserCategory11 /> */}
-      <CtaBanner11 />
+      {/* <CtaBanner11 /> */}
       
-      <Testimonials11 />
+      <Testimonial1 />
     
-      <Talent11 />
-      <InspiringService11 />
-      <UpperFooter/>
+      {/* <Talent11 />
+      <InspiringService11 /> */}
+
     </>
   );
 }

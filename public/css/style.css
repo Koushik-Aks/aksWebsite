@@ -14,14 +14,7 @@ Tag:  bidding, fiverr, freelance marketplace, freelancers, freelancing, gigs, hi
 /* Typography Styles */
 /* Header Styles */
 /* All Type Of Footer Styles */
-/* All styles about breadcumb */
-/* Dashboard Style Code Here */
-/* Messages Styles */
-/* Listings Styles */
-/* About Pages Design Content Styles  */
-/* Hero Styles All Type Of */
-/* ALl Blogs Styles Here  */
-/* Brands */
+/* All styles about 
 /* Commons Styles of Template */
 /* Contact Styles */
 /* All CTA Styles Here */
@@ -699,6 +692,12 @@ h2 {
   position: relative;
   margin-right: 25px;
 }
+/* styles.css or App.css */
+.breadcrumb-title,
+.breadcrumb-brief {
+  color: black !important;
+}
+
 .breadcumb-style1 .breadcumb-list a:after {
   content: "/";
   font-size: 14px;
@@ -4387,7 +4386,7 @@ section {
 }
 
 .cta-service-v6 {
-  background-image: url(../images/background/cta-service-v6-bg.jpg);
+  background-image: url(../images/background/back.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 300px;
@@ -4444,14 +4443,14 @@ section {
 }
 
 .cta-about-v1 {
-  background-image: url(../images/background/cta-about-banner.jpg);
+  background-image: url(../images/background/back.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 300px;
 }
 
 .cta-home3-last {
-  background-image: url(../images/background/home3-cta-last.jpg);
+  background-image: url(../images/background/back.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -5025,7 +5024,7 @@ section {
   transition: all 0.3s ease;
 }
 .iconbox-style1 .icon {
-  color: #1F4B3F;
+  color: #808080;
   display: inline-block;
   font-size: 40px;
   position: relative;
@@ -5288,14 +5287,14 @@ section {
   box-shadow: none;
   color: #ffffff;
 }
-.iconbox-style1.at-home17-v2 {
-  background-color: #FFEDE8;
-}
+/* .iconbox-style1.at-home17-v2 {
+  background-color: #a8e5f9;
+} */
 .iconbox-style1.at-home17-v2 .icon:before {
   background-color: #F9FBFA;
 }
 .iconbox-style1.at-home17-v2:hover {
-  background-color: #222222;
+  background-color: #a8e5f9;
 }
 .iconbox-style1.at-home17-v2:hover .icon {
   color: #ffffff;
@@ -7157,7 +7156,7 @@ textarea {
 }
 
 .btn-thm {
-  background-color: #808080;
+  background-color: #222222;
   border: 2px solid 808080;
   color: #ffffff;
 }
@@ -7290,11 +7289,11 @@ textarea {
   background-color: #000000;
 }
 
-.btn-thm:hover {
-  border: 2px solid #1F4B3F;
-}
 .btn-thm:hover:before {
-  background-color: #1F4B3F;
+  border: 2px solid #808080;
+}
+.btn-thm:hover{
+  background-color: #222222;
 }
 
 .btn-light-thm {
@@ -7789,8 +7788,9 @@ textarea {
 }
 
 .home11-funfact {
-  background-image: url(../images/background/home11-cta-1.png);
+  background-image: url(../images/background/back.png);
   background-size: cover;
+  background-color: #808080;
 }
 
 /*	Menu Style  */

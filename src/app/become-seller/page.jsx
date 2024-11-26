@@ -9,7 +9,7 @@ import OurTeam1 from "@/components/section/OurTeam1";
 
 export const metadata = {
   title:
-    "Freeio - Freelance Marketplace React/Next Js Template | Become seller",
+    "AKS IT SERVICES",
 };
 
 export default function page() {

@@ -30,11 +30,11 @@ export default function TrendingService2({ bgColor }) {
         <div className="container">
           <div className="row align-items-center wow fadeInUp">
             <div className="col-lg-9">
-              <div className="main-title">
-                <h2 className="title">Our Services</h2>
-                <p className="paragraph">
-                  
-                </p>
+              <div className="main-title text-center">
+                <h2 className="title" style={{ marginLeft: "370px" }}>
+                  Our Services
+                </h2>
+                <p className="paragraph"></p>
               </div>
             </div>
             <div className="col-lg-3 d-none d-lg-block">
@@ -92,8 +92,8 @@ export default function TrendingService2({ bgColor }) {
                     },
                   }}
                 >
-                  {product1.slice(0, 8).map((item,i) => (
-                    <SwiperSlide key={ i }>
+                  {product1.slice(0, 8).map((item, i) => (
+                    <SwiperSlide key={i}>
                       <TrendingServiceCard1 data={item} />
                     </SwiperSlide>
                   ))}

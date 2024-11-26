@@ -2,29 +2,10 @@ const menus = [
   {
     id: 1,
     name: "Home",
-    children: [
-      // { id: 1, name: "Home V1", path: "/" },
-      // { id: 2, name: "Home V2", path: "/home-2" },
-      // { id: 3, name: "Home V3", path: "/home-3" },
-      // { id: 4, name: "Home V4", path: "/home-4" },
-      // { id: 5, name: "Home V5", path: "/home-5" },
-      // { id: 6, name: "Home V6", path: "/home-6" },
-      // { id: 7, name: "Home V7", path: "/home-7" },
-      // { id: 8, name: "Home V8", path: "/home-8" },
-      // { id: 9, name: "Home V9", path: "/home-9" },
-      // { id: 10, name: "Home V10", path: "/home-10" },
-      { id: 11, name: "Home V11", path: "/home-11" },
-      // { id: 12, name: "Home V12", path: "/home-12" },
-      // { id: 13, name: "Home V13", path: "/home-13" },
-      { id: 14, name: "Home V14", path: "/home-14" },
-      // { id: 15, name: "Home V15", path: "/home-15" },
-      // { id: 16, name: "Home V16", path: "/home-16" },
-      { id: 17, name: "Home V17", path: "/home-17" },
-      // { id: 18, name: "Home V18", path: "/home-18" },
-      // { id: 19, name: "Home V19", path: "/home-19" },
-      // { id: 20, name: "Home V20", path: "/home-20" },
-    ],
+    path: "/home-11",
+    // No children array, as you don't want a dropdown
   },
+  
   {
     id: 2,
     name: "Services",
@@ -249,81 +230,12 @@ const menus = [
       {
         id: 1,
         name: "About",
-        children: [
-          { id: 1, name: "About v1", path: "/about-1" },
-          { id: 2, name: "About v2", path: "/about-2" },
-        ],
+        path: "/about",  // Direct path for About
       },
       {
         id: 2,
         name: "Blog",
-        children: [
-          { id: 1, name: "List 1", path: "/blog-1" },
-          { id: 2, name: "List 2", path: "/blog-2" },
-          { id: 3, name: "List 3", path: "/blog-3" },
-          { id: 4, name: "Single", path: "/blog-single" },
-        ],
-      },
-      {
-        id: 3,
-        name: "Shop",
-        children: [
-          { id: 1, name: "List", path: "/shop-list" },
-          { id: 2, name: "Single", path: "/shop-single" },
-          { id: 3, name: "Cart", path: "/shop-cart" },
-          { id: 4, name: "Checkout", path: "/shop-checkout" },
-          { id: 5, name: "Order", path: "/shop-order" },
-        ],
-      },
-      {
-        id: 4,
-        name: "Contact",
-        path: "/contact",
-      },
-      {
-        id: 5,
-        name: "404",
-        path: "/not-found",
-      },
-      {
-        id: 6,
-        name: "Faq",
-        path: "/faq",
-      },
-      {
-        id: 7,
-        name: "Help",
-        path: "/help",
-      },
-      {
-        id: 8,
-        name: "Invoices",
-        path: "/invoices",
-      },
-      {
-        id: 9,
-        name: "Login",
-        path: "/login",
-      },
-      {
-        id: 10,
-        name: "Pricing",
-        path: "/pricing",
-      },
-      {
-        id: 11,
-        name: "Register",
-        path: "/register",
-      },
-      {
-        id: 12,
-        name: "Terms",
-        path: "/terms",
-      },
-      {
-        id: 13,
-        name: "UI Elements",
-        path: "/ui-elements",
+        path: "/blog",  // Direct path for Blog
       },
     ],
   },
@@ -332,8 +244,6 @@ const menus = [
     name: "Contact",
     path: "/contact",
   },
-  
-  
-];
+]  
 
 export default menus;

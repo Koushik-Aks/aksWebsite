@@ -114,20 +114,20 @@ export default function Hero11() {
                 src="/images/about/about-13.jpg"
                 alt=" image "
               />
-              <div className="iconbox-small1 text-start d-flex wow fadeInRight default-box-shadow4 bounce-x animate-up-1">
+              {/* <div className="iconbox-small1 text-start d-flex wow fadeInRight default-box-shadow4 bounce-x animate-up-1">
                 <span className="icon flaticon-badge"></span>
                 <div className="details pl20">
                   <h6 className="mb-1">Proof of quality</h6>
                   <p className="text fz13 mb-0">Lorem Ipsum Dolar Amet</p>
                 </div>
-              </div>
-              <div className="iconbox-small2 text-start d-flex wow fadeInLeft default-box-shadow4 bounce-y animate-up-2">
+              </div> */}
+              {/* <div className="iconbox-small2 text-start d-flex wow fadeInLeft default-box-shadow4 bounce-y animate-up-2">
                 <span className="icon flaticon-security"></span>
                 <div className="details pl20">
                   <h6 className="mb-1">Safe and secure</h6>
                   <p className="text fz13 mb-0">Lorem Ipsum Dolar Amet</p>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

@@ -18,8 +18,11 @@ export default function BrowserCategory17() {
       <div className="container">
         <div className="row align-items-center wow fadeInUp">
           <div className="col-lg-9">
-            <div className="main-title">
-              <h2 className="title">Sectors We Serve in</h2>
+            
+              <div className="main-title text-center">
+                <h2 className="title" style={{ marginLeft: "370px" }}>
+                Sectors We Serve in
+                </h2>
             </div>
           </div>
         </div>

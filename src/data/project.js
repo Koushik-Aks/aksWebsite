@@ -230,44 +230,45 @@ export const testimonial = [
   {
     id: 1,
     title:
-      "Our family embarked on a remarkable bullet train journey in Japan - this hotel's convenient location made it a breeze. Agoda's pricing was fantastic.",
-    name: "Emma Johnson",
-    company: "Product Manager, Apple Inc",
+      "Thanks team for your prompt support for cleaning Ransomware malware. Would appreciate your help and efforts during off hours. Would like to specially thanks to networking team for providing continuous support.",
+    name: "CSPDCL, RAIPUR",
+    company: "Manager (IT)",
     image: "/images/testimonials/testi-1.png",
   },
   {
     id: 2,
     title:
-      "A Memorable Bullet Train Adventure: Our family's Japan travel experience made easy by this hotel. Agoda's pricing exceeded our expectations.",
-    name: "Olivia Smith",
-    company: "Travel Blogger",
+      "AKS team deserves to be commended for the outstanding work that was completed. We could not have wished for a better result. Security is a key to our organization's success and AKS has helped us reach a higher level and increased peace of mind. We look forward to future projects with AKS.",
+    name: "Altantic International University",
+    company: "Vice President",
     image: "/images/testimonials/testi-2.png",
   },
   {
     id: 3,
     title:
-      "Unforgettable Japan Journey: Our family traveled by bullet train, and the hotel's strategic location enhanced our experience. Agoda's pricing was a pleasant surprise.",
-    name: "Sophia Ramirez",
-    company: "Software Engineer",
+      "Your team did a wonderful job. Apart from audit, IT Security Training was made interesting by your trainers and well appreciated by the participants and helped in enhanced awareness. Network Scanning and Audit, conducted by your auditors was commendable, provided valuable inputs and was an eye opener. We plan to have a fruitful association in future also.",
+    name: "NTPC Badarpur",
+    company: "DGM (IT)",
     image: "/images/testimonials/testi-3.png",
   },
   {
     id: 4,
     title:
-      "A Wonderful Bullet Train Voyage: Our family explored Japan with ease from this hotel's ideal spot. Agoda's pricing made our trip even better.",
-    name: "Isabella Johnson",
-    company: "Graphic Designer",
+      "Thanks team for performing audit of NTPC Sipat in a professional manner. Team was good in terms of technical knowledge/experience and had shown very good human gesture during this audit. We thank you for your kind support to complete this task and will approach you for re-scan work, after finishing some jobs at our end.",
+    name: "BSB Edge",
+    company: "Sr. Manager",
     image: "/images/testimonials/testi-4.png",
   },
-  {
-    id: 5,
-    title:
-      "An Amazing Japan Journey: Bullet train travel with family was made effortless by the hotel's location. Agoda's pricing added tremendous value.",
-    name: "Ava Lee",
-    company: "Marketing Manager",
-    image: "/images/testimonials/testi-5.png",
-  },
+  // {
+  //   id: 5,
+  //   title:
+  //     "An Amazing Japan Journey: Bullet train travel with family was made effortless by the hotel's location. Agoda's pricing added tremendous value.",
+  //   name: "Ava Lee",
+  //   company: "Marketing Manager",
+  //   image: "/images/testimonials/testi-5.png",
+  // },
 ];
+
 export const browserCategory2 = [
   {
     id: 1,

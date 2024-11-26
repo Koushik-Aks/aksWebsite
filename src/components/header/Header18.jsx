@@ -1,7 +1,5 @@
 "use client";
 import React from "react";
-import Navigation from "./Navigation";
-import MobileNavigation2 from "./MobileNavigation2";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -9,39 +7,32 @@ export default function Header18() {
   return (
     <>
       <header className="header-nav nav-homepage-style at-home17 stricky main-menu border-0" style={headerStyles.header}>
-        <nav className="posr">
-          <div className="container posr">
-            <div className="row align-items-center justify-content-between">
-              <div className="col-auto px-0 px-xl-3">
-                <div className="d-flex align-items-center justify-content-between">
-                  <div className="logos">
-                    <Link className="header-logo logo1" href="/">
-                      <Image
-                        width={250}
-                        height={50}
-                        src="/images/aks.png"
-                        alt="Header Logo"
-                      />
-                    </Link>
-                    <Link className="header-logo logo2" href="/">
-                      <Image
-                        width={253}
-                        height={50}
-                        src="/images/aks.png"
-                        alt="Header Logo"
-                      />
-                    </Link>
-                  </div>
-                </div>
-              </div>
-              <div className="col-auto pe-0 pe-xl-3">
-                <div className="d-flex align-items-center">
-                  <Navigation />
+        <div className="container posr">
+          <div className="row align-items-center justify-content-between">
+            <div className="col-auto px-0 px-xl-3">
+              <div className="d-flex align-items-center justify-content-between">
+                <div className="logos">
+                  <Link className="header-logo logo1" href="/">
+                    <Image
+                      width={250}
+                      height={50}
+                      src="/images/aks.png"
+                      alt="Header Logo"
+                    />
+                  </Link>
+                  <Link className="header-logo logo2" href="/">
+                    <Image
+                      width={253}
+                      height={50}
+                      src="/images/aks.png"
+                      alt="Header Logo"
+                    />
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
-        </nav>
+        </div>
       </header>
 
       <div className="search-modal">
@@ -84,14 +75,10 @@ export default function Header18() {
           </div>
         </div>
       </div>
-
-      <MobileNavigation2 />
     </>
   );
 }
 
-
-// 
 const headerStyles = {
   header: {
     position: "fixed", 
@@ -109,5 +96,3 @@ const headerStyles = {
     overflow: "visible",    
   },
 };
-
-

@@ -6,19 +6,22 @@ export default function Breadcumb1({ title, brief, isBtnActive }) {
   return (
     <>
       <section className="breadcumb-section wow fadeInUp mt40">
-        <div className="cta-commmon-v1 cta-banner bgc-thm2 mx-auto maxw1700 pt120 pb120 bdrs16 position-relative overflow-hidden d-flex align-items-center mx20-lg">
+        <div
+          className="cta-commmon-v1 cta-banner bgc-thm2 mx-auto maxw1700 pt120 pb120 bdrs16 position-relative overflow-hidden d-flex align-items-center mx20-lg"
+          style={{ backgroundImage: "url('/images/background/back.png') " }}
+        >
           <Image
             height={226}
             width={198}
             className="left-top-img wow zoomIn"
-            src="/images/vector-img/left-top.png"
+            // src="/images/vector-img/left-top.png"
             alt="object 1"
           />
           <Image
             height={181}
             width={255}
             className="right-bottom-img wow zoomIn"
-            src="/images/vector-img/right-bottom.png"
+            // src="/images/vector-img/right-bottom.png"
             alt="object 2"
           />
           <div className="container">
@@ -28,11 +31,11 @@ export default function Breadcumb1({ title, brief, isBtnActive }) {
                   className="position-relative wow fadeInUp"
                   data-wow-delay="300ms"
                 >
-                  <h2 className="text-white">{title}</h2>
-                  <p className="text mb30 text-white">{brief}</p>
+                  <h2 className="text-black">{title}</h2>
+                  <p className="text mb30 text-black">{brief}</p>
                   {isBtnActive && (
                     <Link className="ud-btn btn-thm" href="/contact">
-                      Become Seller
+                      {/* Become Seller */}
                       <i className="fal fa-arrow-right-long" />
                     </Link>
                   )}

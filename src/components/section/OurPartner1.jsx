@@ -37,17 +37,35 @@ const OurFunFact11 = () => {
   }, []);
 
   return (
-    <section className="home11-funfact bdrs12 mx-auto maxw1700" style={{ backgroundColor: '#808080' }}>
-      <div className="container" style={{ width: '100%', height: '80px', paddingTop: '0px', marginTop: '-70px' }}> {/* Adjust paddingTop here */}
-        <div className="row" style={{ height: '100%' }}> {/* Set row height to match container */}
-          <div className="col-xl-10 mx-auto" style={{ height: '100%' }}>
-            {/* Partner Slider Section */}
-            <div className="partner-slider mt-5" style={{ height: '100%' }}>
-              <h1 className="slider-heading text-center" style={{ marginBottom: '40px' }}>Our Clients</h1>
+    <section
+      className="home11-funfact mx-auto maxw1700"
+      style={{
+        backgroundColor: '#808080',
+        width: '98%',
+        padding: '20px 0',
+        borderRadius: '12px', // Added rounded corners
+        overflow: 'hidden', // Ensures content respects rounded corners
+      }}
+    >
+      <div className="container" style={{ width: '100%' }}>
+        <div className="row">
+          <div className="col-12">
+            <div className="partner-slider mt-4">
+              <h1
+                className="slider-heading text-center"
+                style={{
+                  marginBottom: '30px',
+                  fontSize: '30px',
+                  fontWeight: 'bold', // Title in bold
+                  color: '#000', // Title in black
+                }}
+              >
+                Our Clients
+              </h1>
               {showSlider && (
                 <Swiper
                   modules={[Autoplay]}
-                  spaceBetween={20}  // Adjust space between slides
+                  spaceBetween={15}
                   slidesPerView={6}
                   loop={true}
                   autoplay={{
@@ -55,30 +73,28 @@ const OurFunFact11 = () => {
                     disableOnInteraction: false,
                   }}
                   breakpoints={{
-                    320: { slidesPerView: 2 },
-                    480: { slidesPerView: 3 },
-                    640: { slidesPerView: 4 },
-                    768: { slidesPerView: 5 },
-                    1024: { slidesPerView: 6 },
+                    320: { slidesPerView: 2, spaceBetween: 10 },
+                    480: { slidesPerView: 3, spaceBetween: 10 },
+                    640: { slidesPerView: 4, spaceBetween: 15 },
+                    768: { slidesPerView: 5, spaceBetween: 15 },
+                    1024: { slidesPerView: 6, spaceBetween: 20 },
                   }}
                   className="swiper-container"
                   speed={1000}
                 >
                   {subsetPartners.map((partner, index) => (
                     <SwiperSlide key={index}>
-                      <div className="partner_item">
-                        <div className="logo_container">
-                          <Image
-                            height={60}
-                            width={100}
-                            src={partner}
-                            alt={`Partner ${index}`}
-                            className="logo_image"
-                            quality={100}
-                            layout="intrinsic"
-                          />
-                        </div>
-                      </div>
+                      <Image
+                        src={partner}
+                        alt={`Partner ${index}`}
+                        width={120} // Dynamically sized for better scaling
+                        height={80} // Dynamically sized for better scaling
+                        style={{
+                          objectFit: 'contain',
+                          margin: 'auto',
+                        }}
+                        quality={100}
+                      />
                     </SwiperSlide>
                   ))}
                 </Swiper>
