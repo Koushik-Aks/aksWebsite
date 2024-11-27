@@ -4,22 +4,18 @@ export const servicesData = [
     {
       title: "Web Application Security Testing",
       description:
-        "Our Web Application Security Audit service identifies, assesses, and mitigates vulnerabilities in your web application. We conduct Vulnerability Assessment, Penetration Testing, Compliance Verification, Data Encryption, Secure Authentication Review, Detailed Reporting, and Recommendations to safeguard your web assets against unauthorized access, data breaches, and attacks.",
+        " Our Web Application Security Audit identifies vulnerabilities, strengthens defenses with testing, compliance, encryption, secure authentication, and provides detailed recommendations for protection.",
     },
     {
-      title: "Mobile Application Security Testing (Android/IOS)",
+      title: "Mobile Application Security Testing ",
       description:
         "Our Mobile Application Security Audit service identifies, assesses, and secures vulnerabilities unique to mobile apps. We safeguard your data and user privacy across both iOS and Android platforms.",
     },
+    
     {
-      title: "APIs (REST/SOAP)",
+      title: "Performance Testing (Load/Stress)",
       description:
-        "We conduct API security audits to identify and mitigate critical vulnerabilities like Broken Authentication, Mass Assignment, and Improper Asset Management in both REST and SOAP APIs.",
-    },
-    {
-      title: "Source Code Analysis",
-      description:
-        "We perform comprehensive source code analysis across languages such as Java, PHP, .NET, Kotlin, and TypeScript, identifying vulnerabilities like SQL Injection, Cross-Site Scripting (XSS), Insecure Cryptography, Hardcoded Secrets, and more.",
+        "We perform Load and Stress Testing to evaluate your application's ability to handle traffic and extreme conditions, ensuring optimal performance and scalability.",
     },
     {
       title: "Thick Client Security Testing",
@@ -48,13 +44,20 @@ export const servicesData = [
     },
     {
       title: "Functional Testing",
+    
       description:
         "We ensure that your application meets all specified requirements, aligned with key milestones, ensuring comprehensive validation and compliance.",
     },
     {
-      title: "Performance Testing (Load/Stress)",
+      title: "APIs (REST/SOAP)",
       description:
-        "We perform Load and Stress Testing to evaluate your application's ability to handle traffic and extreme conditions, ensuring optimal performance and scalability.",
+        "We conduct API security audits to identify and mitigate critical vulnerabilities like Broken Authentication, Mass Assignment, and Improper Asset Management in both REST and SOAP APIs.",
+    },
+   
+    {
+      title: "Source Code Analysis",
+      description:
+        "We perform source code analysis across languages such as Java, PHP, .NET, Kotlin, and TypeScript, identifying vulnerabilities like SQL Injection, Cross-Site Scripting (XSS),   and more.",
     },
   ];
   

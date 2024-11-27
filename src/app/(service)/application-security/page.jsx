@@ -1,81 +1,77 @@
-// /pages/ApplicationSecurity.js
-
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Header18 from "@/components/header/Header18";
 import Category from "./data/Category";
 import { servicesData } from "./data/servicesData";
+import Breadcumb12 from "./data/breadcumb";
+import Breadcumb3 from "@/components/breadcumb/Breadcumb3";
+import Tabsection from "./data/tabsection";
+import Breadcrumb from "./data/breadcumb";
+
+import Listing9 from "@/components/section/Listing9";
 
 const ApplicationSecurity = () => {
+  // State to track hover status
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+
   return (
     <>
+    
       <Header18 />
-      <Category />
-      {/* <Category/> */}
-      <h1 style={styles.heading}>Application Security Services</h1>
-      <p style={styles.description}>
-        Ensure your organization's digital assets are protected with our
-        comprehensive auditing services. We specialize in app security, web
-        security, and network security, identifying vulnerabilities and providing
-        actionable insights to fortify your defenses against cyber threats. Trust
-        us to enhance your security posture and safeguard your critical
-        information.
-      </p>
+      <Tabsection></Tabsection>
+      {/* <Category /> */}
 
-      <div style={styles.cardContainer}>
-        {servicesData.map((service, index) => (
-          <div key={index} style={styles.card}>
-            <h2 style={styles.cardTitle}>{service.title}</h2>
-            <p style={styles.cardText}>{service.description}</p>
-          </div>
-        ))}
+      <Breadcumb3 path={["Home", "Services","Application Security"]} />
+      <Breadcrumb />
+
+
+      <div className="container">
+        {/* Card container matching the grid layout */}
+        <div style={styles.cardContainer}>
+          {servicesData.map((service, index) => (
+            <div
+              key={index}
+              style={{
+                ...styles.card,
+                ...(hoveredIndex === index ? styles.cardHover : {}),
+              }}
+              onMouseEnter={() => setHoveredIndex(index)}
+              onMouseLeave={() => setHoveredIndex(null)}
+            >
+              <h3 style={styles.cardTitle}>{service.title}</h3>
+              <p style={styles.cardText}>{service.description}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </>
   );
 };
 
+// Updated styles to match container size behavior
 const styles = {
-  heading: {
-    fontSize: "2.5rem",
-    marginBottom: "20px",
-    color: "#2c3e50",
-    fontWeight: "700",
-    textAlign: "center",  // Center the heading
-  },
-  description: {
-    fontSize: "1.2rem",
-    marginBottom: "40px",
-    color: "#7f8c8d",
-    fontWeight: "400",
-    textAlign: "center",  // Center the description
-    maxWidth: "800px",   // Limit the width for better readability
-    marginLeft: "auto",
-    marginRight: "auto",
-  },
   cardContainer: {
     display: "grid",
-    gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))",
-    gap: "30px",
+    gridTemplateColumns: "repeat(4, 1fr)", // 4 cards per row
+    gap: "20px 30px", // Reduced horizontal gap to 5px
     padding: "0 20px",
     marginTop: "30px",
+    justifyItems: "center", // Center the cards horizontally
+    maxWidth: "100%",
+    gridAutoRows: "auto",
+    marginBottom: "40px",
   },
   card: {
     backgroundColor: "#fff",
-    borderRadius: "12px",
-    boxShadow: "0 6px 15px rgba(0, 0, 0, 0.1)",
+    borderRadius: "10px",
+    border: "2px solid #dcdcdc",
     padding: "25px",
     textAlign: "left",
-    transition: "transform 0.3s ease, box-shadow 0.3s ease",
-    border: "1px solid #f2f2f2",  // Lighter border
+    transition: "transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease",
     cursor: "pointer",
-    overflow: "hidden",  // Prevent overflow of elements
-  },
-  cardTitle: {
-    fontSize: "1.8rem",  // Slightly larger font size for better prominence
-    marginBottom: "20px",
-    color: "#2c3e50",
-    fontWeight: "600",
-    textTransform: "uppercase",  // Make the title look more prominent
-    letterSpacing: "1px",  // Slight spacing between letters
+    overflow: "hidden",
+    aspectRatio: "1", // Keeps cards square
+    width: "95%", // Adjusts width to fit grid
   },
   cardText: {
     fontSize: "1rem",
@@ -84,8 +80,12 @@ const styles = {
     marginBottom: "15px",
   },
   cardHover: {
-    transform: "scale(1.05)",  // Slightly scale up the card on hover
-    boxShadow: "0 12px 25px rgba(0, 0, 0, 0.15)",  // Enhance shadow on hover
+    transform: "scale(1.05)",
+    boxShadow: "0 12px 25px rgba(0, 0, 0, 0.15)",
+    // borderColor: "#222222",
+  },
+  footer: {
+    marginTop: "40px",
   },
 };
 

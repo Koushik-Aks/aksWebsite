@@ -4422,7 +4422,7 @@ section {
 }
 
 .cta-job-v1 {
-  background-image: url(../images/background/cta-job-list-v1.jpg);
+  background-image: url(../images/background/back.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 300px;
@@ -11848,9 +11848,9 @@ input:focus-visible {
   background-color: 808080;
 }
 
-.bgc-thm2 {
+/* .bgc-thm2 {
   background-color: #1F4B3F;
-}
+} */
 
 .bgc-thm3 {
   background-color: #F1FCFA;

@@ -10,7 +10,7 @@ import OurPartner1 from "@/components/section/OurPartner1";
 import Testimonial2 from "@/components/section/Testimonial2";
 
 export const metadata = {
-  title: "Freeio - Freelance Marketplace React/Next Js Template | About 2",
+  title: "AKS IT SERVICES",
 };
 
 export default function page() {
@@ -18,17 +18,17 @@ export default function page() {
     <>
       <Breadcumb2
         title="About"
-        brief="Give your visitor a smooth online experience with a solid UX design"
+        // brief="Give your visitor a smooth online experience with a solid UX design"
       />
       
       <About5 />
-      <CounterInfo1 />
-      <CtaBanner3 />
-      <OurFunFact1 />
-      <Testimonial2 />
-      <CtaBanner4 />
+      {/* <CounterInfo1 /> */}
+      {/* <CtaBanner3 /> */}
+      {/* <OurFunFact1 /> */}
+      {/* <Testimonial2 /> */}
+      {/* <CtaBanner4 />
       <OurFaq1 />
-      <OurPartner1 />
+      <OurPartner1 /> */}
     </>
   );
 }

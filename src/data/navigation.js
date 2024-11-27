@@ -230,7 +230,7 @@ const menus = [
       {
         id: 1,
         name: "About",
-        path: "/about",  // Direct path for About
+        path: "/about-2",  // Direct path for About
       },
       {
         id: 2,

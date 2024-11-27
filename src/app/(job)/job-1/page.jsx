@@ -5,7 +5,7 @@ import Listing9 from "@/components/section/Listing9";
 import TabSection1 from "@/components/section/TabSection1";
 
 export const metadata = {
-  title: "Freeio - Freelance Marketplace React/Next Js Template | Job 1",
+  title: "AKS IT SERVICES",
 };
 
 export default function page() {
@@ -13,7 +13,7 @@ export default function page() {
     <>
     
       <TabSection1 />
-      <Breadcumb3 path={["Home", "Services", "Design & Creative"]} />
+      <Breadcumb3 path={["Home", "Services",]} />
       <Breadcumb12 />
       <Listing9 />
     </>
