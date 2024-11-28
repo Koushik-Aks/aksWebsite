@@ -17,7 +17,7 @@ export default function Breadcumb2({ title, brief }) {
             <div className="row">
               <div className="col-xl-5">
                 <div className="position-relative">
-                  <h2 className="text-white">{title}</h2>
+                  <h2 className="text-black">{title}</h2>
                   <p className="text-white mb30">{brief}</p>
                 </div>
               </div>

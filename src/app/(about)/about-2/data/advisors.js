@@ -1,0 +1,42 @@
+module.exports = [
+  {
+    id: 1,
+    city: "New York",
+    category: "Office",
+    name: "YOGESH ANDLAY",
+    image: "/images/Ourteam/Yogesh.jpg",
+    position: "",
+  },
+  {
+    id: 2,
+    city: "San Francisco",
+    category: "Apartments",
+    name: "B.J. SRINATH",
+    image: "/images/Ourteam/shrinaj bj.jpg",
+    position: "",
+  },
+  {
+    id: 3,
+    city: "California",
+    category: "Apartments",
+    name: "COL. ARUN KUMAR ANAND (ANDY)",
+    image: "/images/Ourteam/A-K-Anand.jpeg",
+    position: "",
+  },
+  {
+    id: 4,
+    city: "California",
+    category: "Apartments",
+    name: "SHRI RAJENDRA KUMAR",
+    image: "/images/Ourteam/rajendra.jpg",
+    position: "",
+  },
+  {
+    id: 5,
+    city: "California",
+    category: "Apartments",
+    name: "COL. (DR) ATUL KUMAR",
+    image: "/images/Ourteam/Atul.jpeg",
+    position: "",
+  },
+];

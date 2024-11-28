@@ -17,7 +17,7 @@ export default function page() {
   return (
     <>
       <Breadcumb2
-        title="About"
+        title="WHO WE ARE?"
         // brief="Give your visitor a smooth online experience with a solid UX design"
       />
       
