@@ -12,7 +12,7 @@ const role = [
   "Programming & Tech",
 ];
 
-export default function Breadcrumb() {
+export default function SubBreadcrumb() {
   const [getSelectedRole, setSelectedRole] = useState(null);
 
   // role handler
@@ -23,7 +23,9 @@ export default function Breadcrumb() {
   return (
     <>
       <section className="breadcumb-section pt-0">
-        <div className="cta-job-v1 cta-banner mx-auto maxw1700 pt120 pb120 bdrs16 position-relative overflow-hidden d-flex align-items-center mx20-lg px30-lg"style={{ maxWidth: '1500px' }}>
+        <div className="cta-job-v1 cta-banner mx-auto maxw1700 pt120 pb120 bdrs16 position-relative overflow-hidden d-flex align-items-center mx20-lg px30-lg" style={{ maxWidth: '1500px' }}>
+
+
           {/* <Image
             height={226}
             width={198}
@@ -49,22 +51,23 @@ export default function Breadcrumb() {
             <div className="row wow fadeInUp">
               <div className="col-xl-7">
                 <div className="position-relative">
-                  <h2>Application Security Services</h2>
-                  <p className="text">
-                  Ensure your organization's digital assets are protected with our comprehensive auditing services. We specialize in app security, web security, and network security, identifying vulnerabilities and providing actionable insights to fortify your defenses against cyber threats. 
-                  </p>
+                  <h2>Web Application Security Testing</h2>
+                  <h4>Secure Your Web Application</h4>
+                  {/* <p className="text">
+                    In Application Security Audit, we provide security assessment for your website where we analyze your website/application for any weaknesses, technical flaws, or vulnerabilities, evaluate the security of your application by simulating various application attacks and provide audit report which includes key findings, related issues and suggest a recommendation checklist to maximize security of your application.
+                  </p> */}
                 </div>
                 {/* <div className="advance-search-tab bgc-white p10 bdrs4 mt30">
                   <div className="row"> */}
-                    {/* <div className="col-md-5 col-lg-6 col-xl-6">
+                {/* <div className="col-md-5 col-lg-6 col-xl-6">
                       <div className="advance-search-field bdrr1 bdrn-sm">
                         <HeroSearch1 />
                       </div>
                     </div> */}
-                    {/* <div className="col-md-4 col-lg-4 col-xl-3">
+                {/* <div className="col-md-4 col-lg-4 col-xl-3">
                       <div className="bselect-style1">
                         <div className="dropdown bootstrap-select"> */}
-                          {/* <button
+                {/* <button
                             type="button"
                             className="btn dropdown-toggle btn-light"
                             data-bs-toggle="dropdown"
@@ -80,7 +83,7 @@ export default function Breadcrumb() {
                               </div>
                             </div>
                           </button> */}
-                          {/* <div className="dropdown-menu">
+                {/* <div className="dropdown-menu">
                             <div className="inner show">
                               <ul className="dropdown-menu inner show">
                                 {role.map((item, index) => (
@@ -101,15 +104,15 @@ export default function Breadcrumb() {
                               </ul>
                             </div>
                           </div> */}
-                        {/* </div>
+                {/* </div>
                       </div>
                     </div> */}
-                    {/* <div className="col-md-3 col-lg-2 col-xl-3">
+                {/* <div className="col-md-3 col-lg-2 col-xl-3">
                       <div className="text-center text-xl-start">
                         <a className="ud-btn btn-thm2 w-100 vam">Search</a>
                       </div>
                     </div> */}
-                  {/* </div>
+                {/* </div>
                 </div> */}
               </div>
             </div>

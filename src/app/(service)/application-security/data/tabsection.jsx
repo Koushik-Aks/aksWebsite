@@ -1,28 +1,28 @@
 "use client";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 const categories = [
- 
-  "Web Application Security Testing",
-  "Mobile Application Security Testing ",
-  "APIs (REST/SOAP) ",
-  "Source Code Analysis",
-  "Thick Client Security Testing",
-  "GIGW Compliance Testing",
-  "AUA/KUA/AKA/KSA Compliance Testing",
-  "ASP/ESP (E-sign) Compliance Testing",
-  "VSCC (Form C) Testing",
-  "Performance Testing (Load/Stress)",
-  "Functional Testing",
+  { name: "Web Application Security Testing", link: "/application-security/web-application-security-testing" },
+  { name: "Mobile Application Security Testing", link: "/application-security/mobile-application-security-testing" },
+  { name: "Performance Testing (Load/Stress)", link: "/performance-testing" },
+  { name: "Thick Client Security Testing", link: "/thick-client-security-testing" },
+  { name: "GIGW Compliance Testing", link: "/gigw-compliance-testing" },
+  { name: "AUA/KUA/AKA/KSA Compliance Testing", link: "/aua-kua-aka-ksa-compliance-testing" },
+  { name: "ASP/ESP (E-sign) Compliance Testing", link: "/asp-esp-compliance-testing" },
+  { name: "VSCC (Form C) Testing", link: "/vscc-testing" },
+  { name: "Functional Testing", link: "/functional-testing" },
+  { name: "APIs (REST/SOAP)", link: "/api-testing" },
+  { name: "Source Code Analysis", link: "/source-code-analysis" },
 ];
 
-export default function tabsection() {
+export default function TabSection() {
   const [getCurrentTab, setCurrentTab] = useState("All Categories");
   const path = usePathname();
 
   const handleTabClick = (item) => {
-    setCurrentTab(item);
+    setCurrentTab(item.name);
   };
 
   return (
@@ -46,13 +46,9 @@ export default function tabsection() {
           padding: 10px 20px;
         }
 
-        .categories_list_section .listings_category_nav_list_menu ul li a {
-          cursor: pointer;
-        }
-
-        /* No need for dropdown logic anymore */
-        .categories_list_section .listings_category_nav_list_menu ul li ul {
-          display: none; /* Remove dropdown */
+        .categories_list_section .listings_category_nav_list_menu ul li .active {
+          color: #007bff;
+          font-weight: bold;
         }
       `}</style>
 
@@ -66,12 +62,13 @@ export default function tabsection() {
                 <ul className="mb0 d-flex ps-0">
                   {categories.map((item, index) => (
                     <li key={index}>
-                      <a
-                        onClick={() => handleTabClick(item)}
-                        className={getCurrentTab === item ? "active" : ""}
+                      <Link 
+                        href={item.link} 
+                        onClick={() => handleTabClick(item)} 
+                        className={getCurrentTab === item.name ? "active" : ""}
                       >
-                        {item}
-                      </a>
+                        {item.name}
+                      </Link>
                     </li>
                   ))}
                 </ul>
